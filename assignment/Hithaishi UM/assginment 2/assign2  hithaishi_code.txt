@@ -1,0 +1,23 @@
+import random
+import time 
+
+while True:
+    temp = random.randint(-500,500)
+    humid = random.randint(0,100)
+    if temp > 100 & humid > 55:
+        print("Temperature :",temp,"\nWARNING : Temperature is high !!!!!!")
+        print("Humidity :",humid,"\nWARNING : Humidity is high !!!!!!")
+        print("\n")
+    elif temp > 100 & humid < 55:
+        print("Temperature :",temp,"\nWARNING : Temperature is high !!!!!!")
+        print("Humidity :",humid,"\nNormal humidity")
+        print("\n")
+    elif temp < 100 & humid > 55:
+        print("Temperature :",temp,"\nNormal temperature")
+        print("Humidity :",humid,"\nWARNING : Humidity is high !!!!!!")
+        print("\n")
+    else:
+        print("Temperature :",temp,"\nNormal temperature")
+        print("Humidity :",humid,"\nNormal humidity")
+        print("\n")
+    time.sleep(1)
